@@ -1,0 +1,117 @@
+/*
+CSS for the main site
+Josh Van Buren
+Inspired by various websites
+*/
+
+/*Body styles*/
+body
+{ 
+	/*Calibri font, white color, black background*/
+	margin:0 auto; font-family:Calibri, sans-serif;
+	color: #FFFFFF;
+	background-color: #000000;
+}
+
+/*Nav styles*/
+#nav
+{
+	/*White border around nav bar, 1 pixel, no list style, no margin, no padding, left align*/
+	border:1px solid #FFFFFF;
+	border-width:1px 0;
+	list-style:none;
+	margin:0;
+	padding:0;
+	text-align:left;
+}
+
+/*List items on the nav bar styles*/
+#nav li
+{
+	/*Relative position, inline display*/
+	position:relative;
+	display:inline;
+}
+
+/*Nav bar link styles*/
+#nav a
+{
+	/*Display as inline block with ten pixel padding*/
+	display:inline-block;
+	padding:10px;
+}
+
+/*Nav bar drop down list styles*/
+#nav ul
+{
+	/*Absolute positioning, initially invisible, no margin, no padding, left aligned*/
+	position:absolute;
+	left:-9999px;
+	margin:0;
+	padding:0;
+	text-align:left;
+}
+
+/*Sub menu list item styles*/
+#nav ul li
+{
+	/*Display as block element*/
+	display:block;
+}
+
+/*Styles that display the sub menus on hover*/
+#nav li:hover ul
+{
+	/*Show sub menu as left aligned*/
+	left:0;
+}
+
+/*Hover styles for the sub menu items*/
+#nav li:hover a
+{
+	/*Underline the text, change the background color to gray*/
+	text-decoration:underline;
+	background:#6E6E6E;
+}
+
+/*Sub, sub menu link styles*/
+#nav li:hover ul a
+{
+	/*No text decoration, reset background*/
+	text-decoration:none;
+	background:none;
+}
+
+/*Sub, sub menu hover styles*/
+#nav li:hover ul a:hover
+{
+	/*Underline the text, change the background color to gray*/
+	text-decoration:underline;
+	background:#6E6E6E;
+}
+
+/*List item link styles*/
+#nav ul a
+{
+	/*No wrapping, block display, white bottom border*/
+	white-space:nowrap;
+	display:block;
+	border-bottom:1px solid #FFFFFF;
+}
+
+/*Link styles*/
+a
+{
+	/*No text decoration, bold, white color*/
+	text-decoration:none;
+	font-weight:bold;
+	color: #FFFFFF;
+}
+
+/*Hover styles for links*/
+a:hover
+{
+	/*Underline text, white color*/
+	text-decoration:underline;
+	color: #FFFFFF;
+}
