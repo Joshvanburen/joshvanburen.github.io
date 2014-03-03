@@ -71,7 +71,7 @@ body
 {
 	/*Underline the text, change the background color to gray*/
 	text-decoration:underline;
-	background:#6E6E6E;
+	/*background:#6E6E6E;*/
 }
 
 /*Sub, sub menu link styles*/
@@ -87,7 +87,7 @@ body
 {
 	/*Underline the text, change the background color to gray*/
 	text-decoration:underline;
-	background:#6E6E6E;
+	/*background:#6E6E6E;*/
 }
 
 /*List item link styles*/
@@ -114,4 +114,11 @@ a:hover
 	/*Underline text, white color*/
 	text-decoration:underline;
 	color: #FFFFFF;
+}
+
+/*Horizontal rule styles*/
+hr
+{
+	/*Border style*/
+	border: 3px outset white;
 }
