@@ -13,112 +13,187 @@ body
 	background-color: #000000;
 }
 
-/*Nav styles*/
-#nav
+/*Main menu*/
+#menu
 {
-	/*White border around nav bar, 1 pixel, no list style, no margin, no padding, left align*/
-	border:1px solid #FFFFFF;
-	border-width:1px 0;
-	list-style:none;
-	margin:0;
-	padding:0;
-	text-align:left;
+	width: 100%;
+	margin: 0;
+	padding: 10px 0 0 0;
+	list-style: none;  
+	background: #000000;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	-moz-box-shadow: 0 2px 1px #9c9c9c;
+	-webkit-box-shadow: 0 2px 1px #9c9c9c;
+	box-shadow: 0 2px 1px #9c9c9c;
 }
 
-/*List items on the nav bar styles*/
-#nav li
+/*Menu list items*/
+#menu li
 {
-	/*Relative position, inline display*/
-	position:relative;
-	display:inline;
+	float: left;
+	padding: 0 0 10px 0;
+	position: relative;
+	line-height: 0;
 }
 
-/*Nav bar link styles*/
-#nav a
+/*Menu links*/
+#menu a 
 {
-	/*Display as inline block with ten pixel padding*/
-	display:inline-block;
-	padding:10px;
+	float: left;
+	height: 25px;
+	padding: 0 25px;
+	color: #999;
+	text-transform: uppercase;
+	font: bold 12px/25px Calibri;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #000;
+}
+/*Hover behavior links*/
+#menu li:hover > a
+{
+	color: #fafafa;
 }
 
-/*Nav bar drop down list styles*/
-#nav ul
+/*Unordered list behavior on hover*/
+#menu li:hover > ul
 {
-	/*Absolute positioning, initially invisible, no margin, no padding, left aligned*/
-	position:absolute;
-	left:-9999px;
-	margin:0;
-	padding:0;
-	text-align:left;
+	display: block;
 }
 
-/*Sub menu list item styles*/
-#nav ul li
+/*Sub-menu*/
+#menu ul
 {
-	/*Display as block element*/
-	display:block;
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 99999;    
+	background: #000000;
+    -moz-box-shadow: 0 0 2px rgba(255,255,255,.5);
+    -webkit-box-shadow: 0 0 2px rgba(255,255,255,.5);
+    box-shadow: 0 0 2px rgba(255,255,255,.5);	
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
-/*Styles that display the sub menus on hover*/
-#nav li:hover ul
+/*Sub sub menu*/
+#menu ul ul
 {
-	/*Show sub menu as left aligned*/
-	left:0;
+  top: 0;
+  left: 150px;
 }
 
-/*Hover styles for the sub menu items*/
-#nav li:hover a
+/*Sub menu list items*/
+#menu ul li
 {
-	/*Underline the text, change the background color to gray*/
-	text-decoration:underline;
-	/*background:#6E6E6E;*/
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;  
+    -moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    -webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
 }
 
-/*Sub, sub menu link styles*/
-#nav li:hover ul a
-{
-	/*No text decoration, reset background*/
-	text-decoration:none;
-	background:none;
+/*Last item in the sub menu*/
+#menu ul li:last-child
+{   
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;    
 }
 
-/*Sub, sub menu hover styles*/
-#nav li:hover ul a:hover
-{
-	/*Underline the text, change the background color to gray*/
-	text-decoration:underline;
-	/*background:#6E6E6E;*/
+/*Sub menu links*/
+#menu ul a
+{    
+    padding: 10px;
+	height: 10px;
+	width: 130px;
+	height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+	text-transform: none;
 }
 
-/*List item link styles*/
-#nav ul a
+/*Sub menu links on hover*/
+#menu ul a:hover
 {
-	/*No wrapping, block display, white bottom border*/
-	white-space:nowrap;
-	display:block;
-	border-bottom:1px solid #FFFFFF;
+    background: #0186ba;
+	background: -moz-linear-gradient(#04acec,  #0186ba);	
+	background: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
+	background: -webkit-linear-gradient(#04acec,  #0186ba);
+	background: -o-linear-gradient(#04acec,  #0186ba);
+	background: -ms-linear-gradient(#04acec,  #0186ba);
+	background: linear-gradient(#04acec,  #0186ba);
 }
 
-/*Link styles*/
-a
+/*First item in sub menu*/
+#menu ul li:first-child > a
 {
-	/*No text decoration, bold, white color*/
-	text-decoration:none;
-	font-weight:bold;
-	color: #FFFFFF;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
 }
 
-/*Hover styles for links*/
-a:hover
+/*First item in sub menu after hover*/
+#menu ul li:first-child > a:after
 {
-	/*Underline text, white color*/
-	text-decoration:underline;
-	color: #FFFFFF;
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
 }
 
-/*Horizontal rule styles*/
-hr
+/*First item in sub sub menu after*/
+#menu ul ul li:first-child a:after
 {
-	/*Border style*/
-	border: 3px outset white;
+    left: -8px;
+    top: 12px;
+    width: 0;
+    height: 0;
+    border-left: 0;	
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-right: 8px solid #444;
+}
+
+/*First item in sub menu after hover*/
+#menu ul li:first-child a:hover:after
+{
+    border-bottom-color: #04acec; 
+}
+
+/*First item in sub sub menu after hover*/
+#menu ul ul li:first-child a:hover:after
+{
+    border-right-color: #04acec; 
+    border-bottom-color: transparent; 	
+}
+
+/*Last list item*/
+#menu ul li:last-child > a
+{
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+/*Clear floated elements*/
+#menu:after 
+{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
 }
