@@ -19,6 +19,12 @@ a
 	color: #FFFFFF;	
 }
 
+/*Main div style*/
+#mainDiv
+{
+	padding-left:10px;
+}
+
 /*Main menu*/
 #menu
 {
