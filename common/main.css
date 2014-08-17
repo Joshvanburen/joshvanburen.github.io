@@ -19,6 +19,18 @@ a
 	color: #FFFFFF;	
 }
 
+/*Image float left*/
+img.imgFloatLeft
+{
+	float:left;
+}
+
+/*Image float right*/
+img.imgFloatRight
+{
+	float:right;
+}
+
 /*Main div style*/
 #mainDiv
 {
