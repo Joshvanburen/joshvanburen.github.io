@@ -23,6 +23,7 @@ a
 img.imgFloatLeft
 {
 	float:left;
+	padding:5px;
 }
 
 /*Image float right*/
