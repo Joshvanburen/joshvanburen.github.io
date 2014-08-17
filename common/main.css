@@ -23,13 +23,14 @@ a
 img.imgFloatLeft
 {
 	float:left;
-	padding:5px;
+	padding-right:10px;
 }
 
 /*Image float right*/
 img.imgFloatRight
 {
 	float:right;
+	padding-left:10px;
 }
 
 /*Main div style*/
