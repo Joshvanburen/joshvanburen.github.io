@@ -4,8 +4,10 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
 		<title>Projects</title>
-		<link rel="stylesheet" type="text/css" href="../../common/main.css">
+		<link rel="stylesheet" type="text/css" href="../common/main.css">
+		<link rel="stylesheet" type="text/css" href="../common/imagelightbox.css">
 		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="../common/imagelightbox.js"></script>
 		<script type="text/javascript" language="javascript">
 			$(document).ready(function()
 			{
@@ -19,7 +21,7 @@
 		</div>
 		<div id="mainDiv">
 			<h1>Batch Rename of MP3 Files</h1>
-			<p><img src="batchmp301.jpg" alt="Batch MP3 Rename" class="imgFloatLeft"/>I have a large collection of music in mp3 format and was not always disciplined in naming the files.
+			<p><img src="batchmp301.jpg" alt="Batch MP3 Rename" class="imgFloatLeft" id="imagelightbox"/>I have a large collection of music in mp3 format and was not always disciplined in naming the files.
 			Eventually, this became really annoying and I wanted a tool to read the mp3 tag data on the files and rename them
 			to whatever convention that I wanted.  None of the programs I looked at were lean and just did that job.  So, I 
 			decided to write my own.  I used the <a href="https://www.wxwidgets.org">WxWidgets</a> library for the GUI and the <a href="http://taglib.github.io">Taglib</a> 
